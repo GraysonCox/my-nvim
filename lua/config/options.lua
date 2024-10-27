@@ -3,9 +3,9 @@
 -- Add any additional options here
 vim.opt.list = true
 vim.opt.listchars = {
-  space = ".",
-  trail = ".",
-  lead = ".",
+  space = "·",
+  trail = "·",
+  lead = "·",
   tab = "→ ",
   eol = "↴",
 }

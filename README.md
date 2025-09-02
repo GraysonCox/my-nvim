@@ -2,7 +2,7 @@
 
 Follow the instructions to install [LazyVim](https://www.lazyvim.org/installation) and then place all these files in the `~/.config/nvim` directory.
 
-Note that this setup requires the following dependencies.
+Note that this setup requires Kitty and the following dependencies.
 
 - npm
   - typescript
@@ -10,3 +10,4 @@ Note that this setup requires the following dependencies.
 - Other
   - ripgrep
   - hashicorp/tap/terraform-ls
+  - imagemagick

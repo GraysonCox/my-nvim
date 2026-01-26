@@ -5,3 +5,7 @@
 vim.keymap.set("x", "p", function()
   return 'pgv"' .. vim.v.register .. "y"
 end, { remap = false, expr = true })
+
+-- Move buffer *position* left/right
+vim.keymap.set("n", "<Leader>b{", "<Cmd>BufferLineMovePrev<CR>")
+vim.keymap.set("n", "<Leader>b}", "<Cmd>BufferLineMoveNext<CR>")

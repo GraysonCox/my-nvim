@@ -17,6 +17,17 @@ return {
           },
         },
         tsserver = {
+          -- Explicitly include React/TSX filetypes so LSP works in React projects
+          -- Include common aliases some setups use for TSX/JSX so tsserver always attaches.
+          cmd = { "typescript-language-server", "--stdio" },
+          filetypes = {
+            "javascript",
+            "javascriptreact",
+            "javascript.jsx",
+            "typescript",
+            "typescriptreact",
+            "typescript.tsx",
+          },
           settings = {
             -- Customize settings for tsserver here, if needed
             javascript = {
@@ -49,7 +60,8 @@ return {
           local config = {
             cmd = {
               "jdtls",
-              "-data", workspace_dir,
+              "-data",
+              workspace_dir,
             },
             root_dir = root_dir,
             settings = {
